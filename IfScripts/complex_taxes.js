@@ -1,7 +1,7 @@
 // calculate fedseral tax based on values of annual 
 //  gross income and a filing status (single,joint)
-let payRate= 10.00; let hoursWorked=40;
-let overtime=1.5; let grossPay ;
+var payRate= 10.00; var hoursWorked=40;
+var overtime=1.5; var grossPay ;
 
 if (hoursWorked<40) {
     grossPay=payRate*hoursWorked;
@@ -18,11 +18,11 @@ if (hoursWorked>40) {
     //console.log(grossPay)
 }
 
-let annualGrosspay=grossPay*52;
+var annualGrosspay=grossPay*52;
 
- let filingStatus= "single"; 
- let taxRate; let taxWitheld=grossPay*taxRate;
- let netPay=grossPay-taxWitheld;
+ var filingStatus= "single"; 
+ var taxRate; var taxWitheld=grossPay*taxRate;
+ var netPay=grossPay-taxWitheld;
  
 if (filingStatus="single" && annualGrosspay<12000) {
     taxRate="5%";
